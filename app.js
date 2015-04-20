@@ -1,13 +1,11 @@
-console.log(document.write(document.getElementById("testing").value));
-
 var monster = {
-	name: document.write(document.getElementById("name").value),
-	strength: document.write(document.getElementById("strength").value),
-	dexterity: document.write(document.getElementById("dexterity").value,
-	constitution: document.write(document.getElementById("constitution").value),
-	wisdom: document.write(document.getElementById("wisdom").value),
-	intelligence: document.write(document.getElementById("intelligence").value),
-	charisma: document.write(document.getElementById("charisma").value)
+	name: document.getElementById("name").value,
+	strength: document.getElementById("strength").value,
+	dexterity: document.getElementById("dexterity").value,
+	constitution: document.getElementById("constitution").value,
+	wisdom: document.getElementById("wisdom").value,
+	intelligence: document.getElementById("intelligence").value,
+	charisma: document.getElementById("charisma").value
 };
 
 var player = {
@@ -18,20 +16,11 @@ var player = {
 	wisdom: monster.wisdom,
 	intelligence: monster.intelligence,
 	charisma: monster.charisma,
-	playerClass: document.write(document.getElementById("class").value)
+	playerClass: document.getElementById("class").value
 };
 
 var storageArray = [];
 
-var nameInput = document.write(document.getElementById("name").value);
-var strengthInput = document.write(document.getElementById("strength").value);
-var dexterityInput = document.write(document.getElementById("dexterity").value);
-var constitutionInput = document.write(document.getElementById("constitution").value);
-var wisdomInput = document.write(document.getElementById("wisdom").value);
-var intelligenceInput = document.write(document.getElementById("intelligence").value);
-var charismaInput = document.write(document.getElementById("charisma").value);
-
-console.log(nameInput);
 
 if (document.write(document.getElementById("class").value) !== "") {
 	//put the values in as a player
@@ -39,8 +28,16 @@ if (document.write(document.getElementById("class").value) !== "") {
 	//put the values in as a monster
 }
 
-function createMonster(name, strength, dexterity, constitution, wisdom, intelligence, charisma){
+function createMonster(input){
+	input.name = document.getElementById("name").value,
+	input.strength = document.getElementById("strength").value,
+	input.dexterity = document.getElementById("dexterity").value,
+	input.constitution = document.getElementById("constitution").value,
+	input.wisdom = document.getElementById("wisdom").value,
+	input.intelligence = document.getElementById("intelligence").value,
+	input.charisma = document.getElementById("charisma").value
 
 }
 
-document.getElementById("addMonster").addEventListener('click', <functionNameGoesHere>);
+var buttonClick = document.getElementById("addMonster").addEventListener('click', <functionNameGoesHere>);
+
